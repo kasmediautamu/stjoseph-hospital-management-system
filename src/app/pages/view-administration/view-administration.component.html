@@ -1,0 +1,13 @@
+<section>
+  <div class="default" *ngIf="!this.appState.viewAdmin; else dataReturned">
+    <app-svg-icon src="../../../assets/icons/new-view.svg"></app-svg-icon>
+    <h3>Create a View</h3>
+    <p class="description">A view lets you see data from different angles, get started here</p>
+    <button class="add-view" (click)="openNewViewModal()">
+      <app-svg-icon src="../../../assets/icons/plus.svg"></app-svg-icon>New View
+    </button>
+  </div>
+  <ng-template #dataReturned>
+    <app-table></app-table>
+  </ng-template>
+</section>

@@ -1,0 +1,20 @@
+<svg id="Group_4" data-name="Group 4" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <g id="Group">
+    <path id="Path" d="M0,0H128V128H0Z" fill="none"/>
+    <path id="Path-2" data-name="Path" d="M0,21.333V10.667A10.667,10.667,0,0,1,10.667,0H21.333" transform="translate(21.333 21.333)" fill="none" stroke="#526F93" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-3" data-name="Path" d="M0,0V10.667A10.667,10.667,0,0,0,10.667,21.333H21.333" transform="translate(21.333 85.333)" fill="none" stroke="#526F93" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-4" data-name="Path" d="M0,0H10.667A10.667,10.667,0,0,1,21.333,10.667V21.333" transform="translate(85.333 21.333)" fill="none" stroke="#526F93" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-5" data-name="Path" d="M0,21.333H10.667A10.667,10.667,0,0,0,21.333,10.667V0" transform="translate(85.333 85.333)" fill="none" stroke="#526F93" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+  </g>
+  <g id="Group-2" data-name="Group" transform="translate(28 28)">
+    <path id="Path-6" data-name="Path" d="M0,0H72V72H0Z" fill="none"/>
+    <path id="Path-7" data-name="Path" d="M0,1.5H16.5" transform="translate(12 16.5)" fill="none" stroke="#FAA41F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-8" data-name="Path" d="M0,1.5H16.5" transform="translate(12 28.5)" fill="none" stroke="#FAA41F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-9" data-name="Path" d="M0,1.5H16.5" transform="translate(12 40.5)" fill="none" stroke="#FAA41F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-10" data-name="Path" d="M0,1.5H16.5" transform="translate(12 52.5)" fill="none" stroke="#FAA41F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-11" data-name="Path" d="M0,1.5H16.5" transform="translate(43.5 16.5)" fill="none" stroke="#FAA41F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-12" data-name="Path" d="M0,1.5H16.5" transform="translate(43.5 28.5)" fill="none" stroke="#FAA41F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-13" data-name="Path" d="M0,1.5H16.5" transform="translate(43.5 40.5)" fill="none" stroke="#FAA41F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path-14" data-name="Path" d="M0,1.5H16.5" transform="translate(43.5 52.5)" fill="none" stroke="#FAA41F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+  </g>
+</svg>

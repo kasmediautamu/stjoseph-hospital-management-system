@@ -1,0 +1,66 @@
+@import '../../../styles/index.scss';
+.login {
+  background-color: #edeff2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+.login-body {
+  min-width: 26%;
+  .logo {
+    margin-bottom:15px;
+  }
+}
+.login-form {
+  background-color: #fff;
+  flex-basis: 100%;
+  padding: 40px;
+  border-radius: 6px;
+}
+.logo-name {
+  color:$secondary-color;
+  font-size: 20px;
+  text-align: center;
+  font-family: $inter-regular;
+  line-height: calc(20 / 24);
+  padding-bottom: 30px;
+}
+.login-form__title {
+  text-align: left;
+  color: $heavy-blue;
+  font-size: 20px;
+  font-family: $inter-bold;
+  line-height: calc(20 / 28);
+  margin-bottom: 30px;
+}
+.login-btn__inactive {
+  min-width: 100%;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  opacity: 0.5;
+  @include btn-primary__disabled;
+}
+.login-btn {
+  min-width: 100%;
+  margin-top: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  cursor: pointer;
+  @include btn-primary;
+}
+.form-group{
+  input {
+    @include input-text;
+  }
+  label {
+    @include lgt-grey-text__13r;
+  }
+}

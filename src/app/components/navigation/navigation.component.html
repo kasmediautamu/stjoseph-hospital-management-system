@@ -1,0 +1,178 @@
+<nav class="d-flex">
+  <div class="logo">
+    <app-svg-icon src="../../../assets/icons/logo.svg"></app-svg-icon>
+    <p class="logo-text">LogoName</p>
+  </div>
+
+  <ul *ngIf="getLocation" class="list-unstyled d-flex">
+    <li>
+      <a href="javascript:void(0)" (click)="onMenuClick()">
+        <app-svg-icon src="../../../assets/icons/menu.svg"></app-svg-icon>
+        Menu
+      </a>
+    </li>
+    <li><app-svg-icon src="../../../assets/icons/plus_.svg"></app-svg-icon>New View</li>
+    <li><app-svg-icon src="../../../assets/icons/edit.svg"></app-svg-icon>Edit</li>
+    <li><app-svg-icon src="../../../assets/icons/delete.svg"></app-svg-icon>Delete</li>
+    <li><app-svg-icon src="../../../assets/icons/apply.svg"></app-svg-icon>Apply</li>
+    <li>
+      <app-svg-icon src="../../../assets/icons/filter.svg"></app-svg-icon>
+      Filter
+      <app-svg-icon src="../../../assets/icons/down-arrow.svg"></app-svg-icon>
+    </li>
+    <li>
+      <app-svg-icon
+        src="../../../assets/icons/help.svg"
+        [ngbTooltip]="tipHelp"
+        triggers="click"
+        tooltipClass="my-custom-class"
+        [autoClose]="'outside'"
+        #tt="ngbTooltip"
+        placement="bottom"
+      ></app-svg-icon>
+      Help
+      <app-svg-icon src="../../../assets/icons/down-arrow.svg"></app-svg-icon>
+    </li>
+  </ul>
+  <!-- help tool tip -->
+  <ng-template #tipHelp>
+    <div class="modify-nav">
+      <div>
+        <p>Contents</p>
+        <p>Overview</p>
+        <p>Technical Support</p>
+        <p>About</p>
+        <p>Logout</p>
+      </div>
+    </div>
+  </ng-template>
+
+  <div *ngIf="!getLocation" class="expanded-menu list-unstyled d-flex">
+    <div class="menu-item">
+      <img src="../../../assets/icons/menu.svg" alt="menu-icon" (click)="onMenuClick()" />Menu
+    </div>
+    <div class="menu-item">View<app-select [(selected)]="ruleTypes" [options]="types"></app-select></div>
+    <div class="menu-item">Type<app-select [(selected)]="ruleTypes" [options]="types"></app-select></div>
+    <div class="menu-item">Layouts<app-select [(selected)]="ruleTypes" [options]="types"></app-select></div>
+    <div class="menu-item">
+      <app-svg-icon
+        src="../../../assets/icons/modify.svg"
+        [ngbTooltip]="tipModify"
+        triggers="click"
+        tooltipClass="my-custom-class"
+        [autoClose]="'outside'"
+        #tt="ngbTooltip"
+        placement="bottom"
+      ></app-svg-icon>
+      Modify
+      <app-svg-icon src="../../../assets/icons/down-arrow.svg"></app-svg-icon>
+    </div>
+    <div class="menu-item">
+      <app-svg-icon src="../../../assets/icons/filter.svg"></app-svg-icon>
+      Filter
+      <app-svg-icon src="../../../assets/icons/down-arrow.svg"></app-svg-icon>
+    </div>
+    <div class="menu-item">
+      <app-svg-icon src="../../../assets/icons/action.svg"></app-svg-icon>
+      Action
+      <app-svg-icon src="../../../assets/icons/down-arrow.svg"></app-svg-icon>
+    </div>
+    <div class="menu-item">
+      <app-svg-icon
+        src="../../../assets/icons/search.svg"
+        [ngbTooltip]="tipSearch"
+        triggers="click"
+        tooltipClass="my-custom-class"
+        [autoClose]="'outside'"
+        #tt="ngbTooltip"
+        placement="bottom"
+      ></app-svg-icon>
+      Search
+      <app-svg-icon src="../../../assets/icons/down-arrow.svg"></app-svg-icon>
+    </div>
+    <div class="menu-item">
+      <app-svg-icon
+        src="../../../assets/icons/help.svg"
+        [ngbTooltip]="tipSearch"
+        triggers="click"
+        tooltipClass="my-custom-class"
+        [autoClose]="'outside'"
+        #tt="ngbTooltip"
+        placement="bottom"
+      ></app-svg-icon>
+      Help<app-svg-icon src="../../../assets/icons/down-arrow.svg"></app-svg-icon>
+    </div>
+  </div>
+</nav>
+
+<ng-template #tipSearch>
+  <div class="modify-nav">
+    <div>
+      <p>Patient</p>
+      <p>Patient Last Name</p>
+      <p>Medical Record Number</p>
+      <p>Patient Number (From Clipboard)</p>
+      <p>Quick Search</p>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="search" aria-label="quick search" />
+        <div class="input-group-append">
+          <span><app-svg-icon class="search-icon" src="../../../assets/icons/search.svg"></app-svg-icon></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #tipModify>
+  <div class="modify-nav">
+    <div>
+      <!-- (mouseenter)="showSubMenu=true" (mouseleave)="showSubMenu=false && makeSubMenuVisible=true" -->
+      <p>Select All Filtered Records</p>
+      <p>Unselect All Filtered Records</p>
+      <p
+        [ngbTooltip]="viewSubmenu"
+        tooltipClass="my-Subcustom-class"
+        [autoClose]="'outside'"
+        #tt="ngbTooltip"
+        placement="right-top"
+      >
+        View Maintenace<app-svg-icon src="../../../assets/icons/rightarrow.svg"></app-svg-icon>
+      </p>
+      <p
+        [ngbTooltip]="laySubmenu"
+        tooltipClass="my-Subcustom-class"
+        [autoClose]="'outside'"
+        #tt="ngbTooltip"
+        placement="right-top"
+      >
+        Layout Maintenace <img src="../../../assets/icons/rightarrow.svg" alt="icon" />
+      </p>
+      <p>Show Research Section</p>
+      <p>Hide Toolbar Captions</p>
+      <p>Zoom In</p>
+      <p>Zoom Out</p>
+      <p>Create New Account</p>
+      <p>Create Simulation Dateset</p>
+      <p>Open New Tab</p>
+
+      <ng-template #viewSubmenu>
+        <div class="v-maintenance">
+          <p>Zoom In</p>
+          <p>Create View in Admin</p>
+          <p>Open View in Admin</p>
+          <p>Copy View</p>
+          <p>Modify View Settings</p>
+        </div>
+      </ng-template>
+      <ng-template #laySubmenu>
+        <div class="v-maintenance">
+          <p>Zoom In</p>
+          <p>Create View in Admin</p>
+          <p>Open View in Admin</p>
+          <p>Copy View</p>
+          <p>Modify View Settings</p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</ng-template>

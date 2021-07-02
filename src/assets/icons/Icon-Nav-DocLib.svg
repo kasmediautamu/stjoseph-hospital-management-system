@@ -1,0 +1,7 @@
+<svg id="Icon_Nav_DocLib" data-name="Icon/Nav/DocLib" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group">
+    <path id="Path" d="M0,0H20V20H0Z" fill="none"/>
+    <rect id="Rectangle" width="13.333" height="13.333" rx="1.667" transform="translate(3.333 3.333)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="Path-2" data-name="Path" d="M0,0H2.5L5,2.5H8.333l2.5-2.5h2.5" transform="translate(3.333 10.833)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+  </g>
+</svg>

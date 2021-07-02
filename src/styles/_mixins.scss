@@ -1,0 +1,159 @@
+@mixin input-text{
+  font-family:$inter-regular;
+  font-size:14px;
+  color:$faint-sky;
+}
+@mixin blue-text__13b {
+  font-family: $inter-bold;
+  font-size: 13px;
+  color:$primary-color;
+}
+@mixin dark-text__12r {
+  font-family: $inter-Regular;
+  font-size: 12px;
+  color:$body-table-content;
+}
+@mixin red-text__12r{
+  font-family: $inter-Regular;
+  font-size: 12px;
+  color:$alert-warning;
+}
+@mixin green-text__12r{
+  font-family: $inter-regular;
+  font-size: 12px;
+  color:$status;
+}
+@mixin grey-text__14m{
+  font-family: $inter-medium;
+  font-size: 14px;
+  color:$heavy-blue;
+}
+@mixin lgt-grey-text__13r{
+  font-family: $inter-regular;
+  font-size: 13px;
+  color:$body-table-content;
+}
+@mixin dk-grey-text__13r{
+  font-family: $inter-regular;
+  font-size: 13px;
+  color:$dirty-brown;
+}
+@mixin btn-primary {
+  background-color: $secondary-color;
+  border-radius: 4px;
+  color:$white;
+  font-family:$inter-regular;
+  font-size: 16px;
+  border:none;
+}
+@mixin btn-primary__disabled {
+  background-color:$fainted;
+  font-family: $inter-regular;
+  font-size:16px;
+  border-radius: 4px;
+  border:none;
+  color:$white;
+}
+@mixin btn-secondary{
+  background-color: $white;
+  border: 1px solid $secondary;
+  border-radius: 4px;
+  color:$secondary;
+  font-family: $inter-regular;
+  font-size: 16px;
+}
+@mixin btn-secondary__disabled{
+  background-color: $white;
+  border: 1px solid $secondary;
+  border-radius: 4px;
+  font-family: $inter-regular;
+  font-size: 16px;
+}
+@mixin btn-tertiary{
+  background-color: $white;
+  border:none;
+  font-family: $inter-medium;
+  font-size:14px;
+  color:$secondary;
+}
+@mixin btn-tertiary__disabled{
+  background-color: $white;
+  border:none;
+  font-family: $inter-medium;
+  font-size:14px;
+  color:$secondary;
+}
+
+//rodrick
+
+@mixin logo-text {
+  font-family: 'Inter-Regular';
+  font-size: 20px;
+  color: $boston-blue;
+}
+
+@mixin button-text {
+  color: $white;
+  font-family: Inter;
+  font-size: 16px;
+}
+
+@mixin paragraph {
+  color: $tundora;
+  font-family: 'Inter-Regular';
+  font-size: 16px;
+}
+
+@mixin heading {
+  color: $mirage;
+  font-family: 'Inter-Bold';
+  font-size: 20px;
+}
+
+@mixin nav-list-heading {
+  font-family: 'Inter-Medium';
+  font-size: 12px;
+  color: $tundora;
+}
+
+@mixin nav-list-item {
+  font-family: 'Inter-Regular';
+  font-size: 13px;
+}
+
+@mixin nav-item {
+  font-family: 'Inter-Regular';
+  font-size: 14px;
+}
+
+@mixin table-header {
+  font-family: 'Inter-Semibold';
+  font-size: 13px;
+  letter-spacing: -0.22px;
+  line-height: calc(13/16);
+}
+
+@mixin table-data {
+  font-family: 'Inter-Regular';
+  font-size: 12px;
+}
+
+@mixin form-section-heading {
+  font-family: 'Inter-Semibold';
+  font-size: 16px;
+}
+
+@mixin form-section-subheading {
+  font-family: 'Inter-Medium';
+  font-size: 14px;
+}
+
+@mixin form-label {
+  font-family: 'Inter-Regular';
+  font-size: 13px;
+}
+
+@mixin input-value {
+  font-family: 'Inter-Regular';
+  font-size: 14px;
+}

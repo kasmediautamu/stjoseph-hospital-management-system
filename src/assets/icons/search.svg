@@ -1,0 +1,7 @@
+<svg id="TopMenu_Icon_New" data-name="TopMenu/Icon/New" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Group">
+    <path id="Path" d="M0,0H16V16H0Z" fill="none"/>
+    <circle id="Oval" cx="4.667" cy="4.667" r="4.667" transform="translate(2 2)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="Path-2" data-name="Path" d="M4,4,0,0" transform="translate(10 10)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+  </g>
+</svg>

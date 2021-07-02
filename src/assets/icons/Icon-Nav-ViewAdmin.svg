@@ -1,0 +1,9 @@
+<svg id="Icon_Nav_ViewAdmin" data-name="Icon/Nav/ViewAdmin" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group">
+    <path id="Path" d="M0,0H20V20H0Z" fill="none"/>
+    <path id="Path-2" data-name="Path" d="M0,3.333V1.667A1.667,1.667,0,0,1,1.667,0H3.333" transform="translate(3.333 3.333)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="Path-3" data-name="Path" d="M0,0V1.667A1.667,1.667,0,0,0,1.667,3.333H3.333" transform="translate(3.333 13.333)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="Path-4" data-name="Path" d="M0,0H1.667A1.667,1.667,0,0,1,3.333,1.667V3.333" transform="translate(13.333 3.333)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="Path-5" data-name="Path" d="M0,3.333H1.667A1.667,1.667,0,0,0,3.333,1.667V0" transform="translate(13.333 13.333)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+  </g>
+</svg>

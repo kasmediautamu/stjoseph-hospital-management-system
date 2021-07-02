@@ -1,0 +1,140 @@
+<form>
+  <!-- <div class="form-group form-inline">
+      Full text search: <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="tbService.searchTerm"/>
+      <span class="ml-3" *ngIf="tbService.loading$ | async">Loading...</span>
+  </div> -->
+  <div class="form-head">
+    <div class="form-head__left">
+      <div class="form-rules">
+        <label for="" class="form-label">Auditor</label>
+        <app-select
+        [(selected)]="ruleTypes"
+         [options]="types"
+       ></app-select>
+
+      </div>
+      <div class="form-rules">
+        <label for="" class="form-label">Follow Up</label>
+        <app-select
+        [(selected)]="ruleTypes"
+         [options]="types"
+       ></app-select>
+
+      </div>
+      <div class="form-rules">
+        <label for="" class="form-label">Status</label>
+        <app-select
+        [(selected)]="ruleTypes"
+         [options]="types"
+       ></app-select>
+
+      </div>
+      <div class="form-rules">
+        <label for="" class="form-label">Account Age</label>
+        <app-select
+        [(selected)]="ruleTypes"
+         [options]="types"
+       ></app-select>
+
+      </div>
+      <div class="form-rules">
+        <label for="" class="form-label">Hidden Records</label>
+        <app-select
+        [(selected)]="ruleTypes"
+         [options]="types"
+       ></app-select>
+
+      </div>
+    </div>
+    <div class="form-head__right" [ngbTooltip]="tipManageColumn" triggers="click" tooltipClass="my-custom-class" [autoClose]="'outside'" #tt="ngbTooltip" placement="bottom-right">
+      <img src="../../../assets/icons/manage.svg" alt="">
+      <div>Manage Columns</div>
+    </div>
+    <ng-template #tipManageColumn>
+      <div class="manage-column">
+        <p>Manage Columns</p>
+          <div class="form-rules">
+            <label for="" class="form-label">Select a column configuration:</label>
+            <app-select
+            [(selected)]="ruleTypes"
+             [options]="types"
+           ></app-select>
+          </div>
+          <div class="column-select">
+            <p>Select a column to show:</p>
+            <div class="column-select-icons">
+              <img src="../../../assets/icons/arrowdownblue.svg" alt="arrow-blue">
+              <img src="../../../assets/icons/arrowupblue.svg" alt="arrow-blue">
+            </div>
+          </div>
+          <div *ngFor="let column of columns |async" class="column-select-item">
+            <img src="../../../assets/icons/options.svg" alt="options-icon">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <p>{{column}}</p>
+          </div>
+          <!-- <div class="column-select-item">
+            <img src="../../../assets/icons/options.svg" alt="options-icon">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <p>Patient Name</p>
+          </div> -->
+          <div class="column-select-btns">
+            <button type="button">Cancel</button>
+            <button type="button">Save</button>
+          </div>
+      </div>
+    </ng-template>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col" sortable="account_number" (sort)="onSort($event)">A/C Number</th>
+      <th scope="col" sortable="patient_name" (sort)="onSort($event)">Patient Name</th>
+      <th scope="col" sortable="payment_status" (sort)="onSort($event)">Payment Status</th>
+      <th scope="col" sortable="contract_name" (sort)="onSort($event)">Contract Name</th>
+      <th scope="col" sortable="payer_id" (sort)="onSort($event)">Payer ID</th>
+      <th scope="col" sortable="service_category" (sort)="onSort($event)">Service Category</th>
+      <th scope="col" sortable="ai_score" (sort)="onSort($event)">AI Score</th>
+      <th scope="col" sortable="admission_date" (sort)="onSort($event)">Admission Date</th>
+      <th scope="col" sortable="discharge_date" (sort)="onSort($event)">Discharge Date</th>
+      <th scope="col" sortable="adj_total_charges" (sort)="onSort($event)">Adj Total Charges</th>
+      <th scope="col" sortable="expense_reimburse" (sort)="onSort($event)">Expense Reimburse</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let work of worklist$ | async">
+
+      <td>
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"><ngb-highlight [result]="work.account_number" [term]="tbService.searchTerm"></ngb-highlight>
+      </td>
+      <td>
+        <ngb-highlight [result]="work.patient_name" [term]="tbService.searchTerm"></ngb-highlight>
+      </td>
+      <td><ngb-highlight [result]="work.payment_status " [term]="tbService.searchTerm"></ngb-highlight></td>
+      <td><ngb-highlight [result]="work.contract_name" [term]="tbService.searchTerm"></ngb-highlight></td>
+      <td><ngb-highlight [result]="work.payer_id | number" [term]="tbService.searchTerm"></ngb-highlight></td>
+      <td><ngb-highlight [result]="work.service_category " [term]="tbService.searchTerm"></ngb-highlight></td>
+      <td><ngb-highlight [result]="work.ai_score | number" [term]="tbService.searchTerm"></ngb-highlight></td>
+      <td><ngb-highlight [result]="work.admission_date" [term]="tbService.searchTerm"></ngb-highlight></td>
+      <td><ngb-highlight [result]="work.discharge_date" [term]="tbService.searchTerm"></ngb-highlight></td>
+      <td><ngb-highlight [result]="work.adj_total_charges" [term]="tbService.searchTerm"></ngb-highlight></td>
+      <td><ngb-highlight [result]="work.exp_reimburse" [term]="tbService.searchTerm"></ngb-highlight></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="d-flex justify-content-between p-2">
+    <ngb-pagination
+      [collectionSize]="(total$ | async)!" [(page)]="tbService.page" [pageSize]="tbService.pageSize">
+    </ngb-pagination>
+
+    <select class="custom-select" style="width: auto" name="pageSize" [(ngModel)]="tbService.pageSize">
+      <option [ngValue]="500">500 items per page</option>
+      <option [ngValue]="1000">1000 items per page</option>
+      <option [ngValue]="1500">1500 items per page</option>
+    </select>
+  </div>
+
+</form>
+
+<app-multi-tab></app-multi-tab>

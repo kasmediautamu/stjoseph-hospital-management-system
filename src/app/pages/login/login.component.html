@@ -1,0 +1,48 @@
+<div class="login p-3">
+  <div class="login-body">
+    <div class="text-center logo">
+      <img src="../../../assets/icons/logo.svg" alt="logo" class="my-4 mx-auto" />
+      <p class="logo-name">logoName</p>
+    </div>
+    <!-- default form -->
+    <form *ngIf="loginForm.get('username').pristine" class="login-form" [formGroup]="loginForm">
+      <p class="login-form__title">Login</p>
+      <div class="form-group">
+        <input type="text" class="form-control p-2" placeholder="Username" formControlName="username" />
+      </div>
+      <div class="form-group pt-4">
+        <input type="password" class="form-control p-2" formControlName="password" placeholder="Password" />
+      </div>
+      <div class="form-group pt-4">
+        <input type="text" class="form-control p-2" placeholder="Server Name" formControlName="servername" />
+      </div>
+      <div class="form-group pt-4">
+        <input type="text" class="form-control p-2" placeholder="Database Name" formControlName="databasename" />
+      </div>
+
+      <button type="submit" class="login-btn__inactive" disabled>Login in</button>
+    </form>
+    <!-- form shown only if username field id touched -->
+
+    <form *ngIf="!loginForm.get('username').pristine" class="login-form" [formGroup]="loginForm" (submit)="loginUser()">
+      <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control p-2" placeholder="Username" formControlName="username" />
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control p-2" formControlName="password" placeholder="Password" />
+      </div>
+      <div class="form-group">
+        <label for="" class="form-label">Server Name</label>
+        <input type="text" class="form-control p-2" placeholder="Server Name" formControlName="servername" />
+      </div>
+      <div class="form-group">
+        <label for="" class="form-label">Database Name</label>
+        <input type="text" class="form-control p-2" placeholder="Database Name" formControlName="databasename" />
+      </div>
+
+      <Button type="submit" class="login-btn">Login in</Button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="view">
+  <div class="view-head">
+    <p>New View</p>
+    <app-svg-icon src="../../../assets/icons/close.svg"></app-svg-icon>
+  </div>
+  <div class="view-body">
+    <form class="login-form" [formGroup]="newviewForm" (submit)="addView()">
+      <div class="group-header">View Description</div>
+      <div class="form-group">
+        <label for="username" class="form-label">View Name</label>
+        <input type="text" class="form-control p-2" formControlName="viewname" />
+      </div>
+      <div class="form-group pt-4">
+        <label for="description" class="form-label">Description</label>
+        <input type="textarea" class="form-control p-2" formControlName="description" />
+      </div>
+      <div class="group-header">Default Limits</div>
+      <div class="form-group pt-3">
+        <label for="auditor" class="col-sm-2 form-label">Auditor</label>
+        <app-select [(selected)]="sites" [options]="siteOptions" class="form-control"></app-select>
+      </div>
+      <div class="form-group pt-4">
+        <label for="follow-up" class="form-label">Follow up</label>
+
+        <app-select [(selected)]="sites" [options]="siteOptions"></app-select>
+      </div>
+      <div class="form-group pt-3">
+        <label for="status" class="form-label">Status</label>
+
+        <app-select [(selected)]="sites" [options]="siteOptions"></app-select>
+      </div>
+      <div class="form-group pt-3">
+        <label for="account age" class="form-label">Account Age</label>
+        <app-select [(selected)]="sites" [options]="siteOptions"></app-select>
+      </div>
+      <div class="form-group pt-3">
+        <label for="hidden records" class="form-label">Hidden Records</label>
+        <app-select [(selected)]="sites" [options]="siteOptions"></app-select>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+        <label class="form-label" for="defaultCheck1"> Use this as default view </label>
+      </div>
+
+      <div class="form-btns pt-4">
+        <button type="button" class="secondary-btn">Cancel</button>
+        <Button type="submit" class="primary-btn">Create View</Button>
+      </div>
+    </form>
+  </div>
+</div>

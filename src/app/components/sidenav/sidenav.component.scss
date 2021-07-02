@@ -1,0 +1,88 @@
+@import '../../../styles/index.scss';
+
+h4 {
+  @include nav-list-heading;
+  text-transform: uppercase;
+  margin: 18px 0 6px;
+}
+
+.sidenav-list {
+  margin-top: 6px;
+  background-color: $white;
+  padding: 0;
+
+  li {
+    padding: 10px;
+    display: flex;
+
+    a {
+      @include nav-list-item;
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      color: $pickled-bluewood;
+      display: flex;
+      text-decoration: none;
+
+      &.active {
+        background-color: $chathams-blue;
+        color: $white;
+
+        ::ng-deep svg g,
+        ::ng-deep svg path {
+          stroke: #fff;
+        }
+      }
+    }
+
+    app-svg-icon {
+      margin: 0 8px;
+    }
+  }
+}
+
+:host {
+  &.collapsed {
+    flex-basis: calc((60 / 1440) * 100%);
+    align-items: center;
+
+    .ACT span {
+      display: none;
+    }
+    .ACT:after {
+      content: 'ACT';
+      text-align: center;
+    }
+
+    .CPT span {
+      display: none;
+    }
+    .CPT:after {
+      content: 'CPT';
+    }
+
+    .CUS span {
+      display: none;
+    }
+    .CUS:after {
+      content: 'CUS';
+    }
+
+    .sidenav-list {
+      li {
+        display: flex;
+        padding: 10px 2px;
+        a {
+          display: flex;
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  & + div {
+    flex-grow: 1;
+  }
+}

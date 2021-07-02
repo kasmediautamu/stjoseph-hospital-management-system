@@ -1,0 +1,84 @@
+@import '../../../styles/index.scss';
+
+.view {
+  padding: 13px 20px;
+}
+
+.view-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+  p {
+    color: $mirage;
+    font-size: 16;
+    font-weight: 700;
+    line-height: calc(16 / 28);
+    text-align: left;
+  }
+  img {
+    cursor: pointer;
+  }
+}
+.group-header {
+  color: $mirage;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(14 / 28);
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.primary-btn {
+  @include button-text;
+  background-color: $chathams-blue;
+  border-radius: 4px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(16 / 24);
+  padding: 10px 8px;
+  border: none;
+  white-space: nowrap;
+}
+.form-btns {
+  display: flex;
+  flex-direction: row;
+  // align-items: flex-end;
+  justify-content: flex-end;
+}
+.secondary-btn {
+  @include button-text;
+  color: $chathams-blue;
+  font-weight: 500;
+  line-height: calc(16 / 24);
+  padding: 10px;
+  border: none;
+  background-color: $white;
+}
+.form-label {
+  @include form-label;
+  color: $pickled-bluewood;
+  letter-spacing: -0.2px;
+  text-align: left;
+}
+input {
+  @include form-label;
+  color: $tundora;
+  font-weight: 500;
+  line-height: calc(13 / 20);
+  text-align: left;
+}
+.add-rule {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+}

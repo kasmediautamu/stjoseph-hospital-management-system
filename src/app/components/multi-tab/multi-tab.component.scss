@@ -1,0 +1,28 @@
+@import '../../../styles/index.scss';
+
+ul {
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(21, 34, 50, 0.08);
+  padding: 0 20px;
+  li {
+    .nav-link {
+      @include table-data;
+      color: $comet;
+      padding: 8px 12px;
+
+      &:hover {
+        border: 0;
+        isolation: auto;
+      }
+
+      &.active {
+        @include nav-list-heading;
+        color: $chathams-blue;
+        background-color: #fff;
+        border-color: transparent transparent $chathams-blue;
+        border-bottom: 3px solid $chathams-blue;
+      }
+    }
+
+  }
+}

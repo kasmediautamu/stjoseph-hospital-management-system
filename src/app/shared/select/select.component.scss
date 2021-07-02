@@ -1,0 +1,77 @@
+@import '../../../styles/index.scss';
+
+.select-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  .input {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    &.disabled {
+      cursor: text;
+    }
+    border: 1px solid #C4C4C4;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:9px;
+    border-radius: 4px;
+
+  }
+  .value{
+    // color: $tundora;
+    font-weight:500;
+    font-size: 13px;
+    line-height: calc(13/20);
+    text-align: left;
+  }
+
+  &.open {
+    app-svg-icon {
+      transform: rotateX(180deg);
+    }
+  }
+}
+
+app-svg-icon {
+  margin-left: 5px;
+}
+img {
+  margin-left: auto;
+}
+.select-menu {
+  position: absolute;
+  z-index: 19;
+
+  min-width: 50%;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  background: $white;
+  box-shadow: 0 5px 7px rgb(80 80 80 / 25%);
+
+  padding: 5px 0;
+  margin-top: 40px;
+
+  line-height: 22px;
+
+  color: $dune;
+  font-size: 11px;
+  font-weight: bold;
+
+  &:not(.active) {
+    display: none;
+  }
+
+  li {
+    cursor: pointer;
+    padding: 0 10px;
+    &:hover {
+      background: rgba($black, 0.1);
+    }
+  }
+}

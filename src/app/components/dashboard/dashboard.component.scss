@@ -1,0 +1,21 @@
+@import '../../../styles/index.scss';
+
+main {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 50px); // minus height of navigation
+
+  app-side-nav {
+    background-color: $athens-gray;
+    flex-basis: calc((220 / 1440) * 100%);
+    padding: 0 10px;
+
+    &.collapsed {
+      flex-basis: calc((60 / 1440) * 100%);
+    }
+
+    & + div {
+      flex-grow: 1;
+    }
+  }
+}

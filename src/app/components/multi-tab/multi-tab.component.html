@@ -1,0 +1,82 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink>Rev/CPT Detail</a>
+    <ng-template ngbNavContent>
+      <p>Rev/CPT Detail works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink>Charge Code Detail</a>
+    <ng-template ngbNavContent>
+      <p>Charge Code Detail works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink>Claims History</a>
+    <ng-template ngbNavContent>
+      <p>Claims History works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="4">
+    <a ngbNavLink>Professional Claims</a>
+    <ng-template ngbNavContent>
+      <p>Professional Claims works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="5">
+    <a ngbNavLink>Payment & Adjustments</a>
+    <ng-template ngbNavContent>
+      <p>Payment & Adjustments works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="6">
+    <a ngbNavLink>ICD Codes</a>
+    <ng-template ngbNavContent>
+      <p>ICD Codes works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="7">
+    <a ngbNavLink>Special Care</a>
+    <ng-template ngbNavContent>
+      <p>Special Care works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="8">
+    <a ngbNavLink>Codes</a>
+    <ng-template ngbNavContent>
+      <p>Codes works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="9">
+    <a ngbNavLink>HIPPS Codes</a>
+    <ng-template ngbNavContent>
+      <p>HIPPS Codes works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="10">
+    <a ngbNavLink>Billing Indicators</a>
+    <ng-template ngbNavContent>
+      <p>Billing Indicators works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="11">
+    <a ngbNavLink>EOR</a>
+    <ng-template ngbNavContent>
+      <p>EOR works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="12">
+    <a ngbNavLink>Detail Reimb</a>
+    <ng-template ngbNavContent>
+      <p>Detail Reimb works</p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="13">
+    <a ngbNavLink>Physicians</a>
+    <ng-template ngbNavContent>
+      <p>Physicians works</p>
+    </ng-template>
+  </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>

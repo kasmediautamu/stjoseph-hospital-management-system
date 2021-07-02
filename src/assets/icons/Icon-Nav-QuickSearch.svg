@@ -1,0 +1,10 @@
+<svg id="Icon_Nav_QuickSearch" data-name="Icon/Nav/QuickSearch" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group">
+    <path id="Path" d="M0,0H20V20H0Z" fill="none"/>
+    <circle id="Oval" cx="3.333" cy="3.333" r="3.333" transform="translate(9.167 9.167)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="Path-2" data-name="Path" d="M0,0,2.083,2.083" transform="translate(15.417 15.417)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="Path-3" data-name="Path" d="M0,.417H13.333" transform="translate(3.333 4.583)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="Path-4" data-name="Path" d="M0,.417H3.333" transform="translate(3.333 9.583)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="Path-5" data-name="Path" d="M0,.417H3.333" transform="translate(3.333 14.583)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+  </g>
+</svg>

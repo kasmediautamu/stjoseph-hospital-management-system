@@ -1,0 +1,27 @@
+<div class="select-input" appDropdown>
+  <div class="input" [class.disabled]="disabled">
+    <div class="placeholder" *ngIf="!selected">{{'Select'}}</div>
+    <div class="value" *ngIf="selected">
+      <ng-container
+        [ngTemplateOutlet]="optionTmpl?.templateRef||defaultTmpl"
+        [ngTemplateOutletContext]="{$implicit: selectedItem}"
+      ></ng-container>
+    </div>
+    <!-- <app-svg-icon *ngIf="!disabled" src="arrow.svg"></app-svg-icon> -->
+    <img src="../../../assets/icons/arrow.svg" alt="select-icon">
+  </div>
+
+  <ul *ngIf="!disabled" class="select-menu" dropdownMenu>
+    <li *ngFor="let option of options" (click)="change(option)">
+      <ng-container
+        [ngTemplateOutlet]="optionTmpl?.templateRef||defaultTmpl"
+        [ngTemplateOutletContext]="{$implicit: option}"
+      ></ng-container>
+    </li>
+  </ul>
+</div>
+
+<ng-template
+  #defaultTmpl
+  let-option
+>{{option.label || option.value}}</ng-template>

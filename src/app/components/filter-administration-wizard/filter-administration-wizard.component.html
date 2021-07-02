@@ -1,0 +1,235 @@
+<div class="view">
+  <div class="view-head">
+    <p>Filter Admistration Wizard</p>
+    <app-svg-icon src="../../../assets/icons/close.svg"></app-svg-icon>
+  </div>
+  <div class="view-body">
+    <form  class="login-form" [formGroup]="wizardForm" (submit)="filterAdmin()">
+      <div class="group-header">
+        Select Rule to add to your view
+      </div>
+
+      <div class="form-group row pt-4">
+        <label for="follow-up" class="col-sm-2 form-label">Follow up</label>
+        <div class="col-sm-10">
+          <app-select
+            [(selected)]="rulesCategories"
+            [options]="categories"
+          ></app-select>
+        </div>
+      </div>
+      <div class="form-group row pt-4">
+        <label for="status" class="col-sm-2 form-label">Status</label>
+        <div class="col-sm-10">
+          <app-select
+           [(selected)]="ruleTypes"
+            [options]="types"
+          ></app-select>
+        </div>
+      </div>
+      <!-- configuration filter -default -->
+      <div class="group-header">
+        Configure Filter
+      </div>
+      <div class="filter-configuration">
+        <div class="form-group-col-1">
+          <label for="" class="form-label">Total Cost</label>
+          <app-select
+           [(selected)]="ruleTypes"
+            [options]="types"
+          ></app-select>
+        </div>
+
+        <div class="form-group-col-2">
+          <div class="form-check-all">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-label" for="defaultCheck1">
+              All Values
+            </label>
+          </div>
+          <div class="config-value">
+            <div class="add-sub">-</div>
+            <div class="config-range">0.00</div>
+            <div class="add-sub">+</div>
+          </div>
+        </div>
+      </div>
+      <!-- config filter oncost select -->
+      <div class="cost-select">
+        <fieldset class=" col">
+          <label for="total cost" class="form-label">Total cost</label>
+          <div>
+            <app-select
+              [(selected)]="rulesCategories"
+              [options]="categories"
+            ></app-select>
+          </div>
+        </fieldset>
+        <fieldset class="cost-input" >
+          <input type="text" class="form-control p-2" placeholder="$1000" />
+        </fieldset>
+        <fieldset class="cost-input cost-range">
+          -
+        </fieldset>
+        <fieldset class="cost-input">
+          <input type="text" class="form-control p-2" placeholder="$5000" />
+        </fieldset>
+      </div>
+      <!-- config filter Acme percent select -->
+      <div class="cost-select">
+        <fieldset class=" col">
+          <label for="total cost" class="form-label">Acme Percent 1</label>
+          <div>
+            <app-select
+              [(selected)]="rulesCategories"
+              [options]="categories"
+            ></app-select>
+          </div>
+        </fieldset>
+        <fieldset class="cost-input" >
+          <input type="text" class="form-control p-2" placeholder="1000%" />
+        </fieldset>
+        <fieldset class="cost-input cost-range">
+          -
+        </fieldset>
+        <fieldset class="cost-input">
+          <input type="text" class="form-control p-2" placeholder="5000%" />
+        </fieldset>
+      </div>
+      <!-- config filter Lastname-singlevalue select -->
+      <div class="cost-select">
+        <fieldset class=" col">
+          <label for="total cost" class="form-label">Last Name</label>
+          <div>
+            <app-select
+              [(selected)]="rulesCategories"
+              [options]="categories"
+            ></app-select>
+          </div>
+        </fieldset>
+        <!-- singlevalue select -->
+        <fieldset class=" col">
+          <div>
+            <app-select
+              [(selected)]="rulesCategories"
+              [options]="categories"
+            ></app-select>
+          </div>
+        </fieldset>
+        <fieldset class="cost-input" >
+          <input type="text" class="form-control p-2" placeholder="M" />
+        </fieldset>
+      </div>
+      <!-- last name with letter range -->
+      <div class="cost-select">
+        <fieldset class=" col">
+          <label for="total cost" class="form-label">Last Name</label>
+          <div>
+            <app-select
+              [(selected)]="rulesCategories"
+              [options]="categories"
+            ></app-select>
+          </div>
+        </fieldset>
+        <fieldset class=" col">
+          <!-- between selectbox -->
+          <div>
+            <app-select
+              [(selected)]="rulesCategories"
+              [options]="categories"
+            ></app-select>
+          </div>
+        </fieldset>
+        <fieldset class="cost-input" >
+          <input type="text" class="form-control p-2" placeholder="A" />
+        </fieldset>
+        <fieldset class="cost-input cost-range">
+          and
+        </fieldset>
+        <fieldset class="cost-input">
+          <input type="text" class="form-control p-2" placeholder="M" />
+        </fieldset>
+      </div>
+      <!-- state select form -->
+      <div class="state-select">
+        <div class="state-filter-head">
+          <fieldset class=" col">
+            <label for="total cost" class="form-label">State</label>
+            <div>
+              <app-select
+                [(selected)]="rulesCategories"
+                [options]="categories"
+              ></app-select>
+            </div>
+          </fieldset>
+          <fieldset class=" col">
+            <!-- include selected value -->
+            <div>
+              <app-select
+                [(selected)]="rulesCategories"
+                [options]="categories"
+              ></app-select>
+            </div>
+          </fieldset>
+        </div>
+        <div class="state-filter-body">
+          <div class="search-filter-area">
+            <div class="filter__head-mod">
+              <div class="filter__head ">
+                <input type="text" placeholder="search">
+                <img src="../../../assets/icons/search.svg" alt="">
+            </div>
+            </div>
+            <div class="filter__body">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox"  id="defaultCheck1">
+                <label class="form-label" for="defaultCheck1">
+                  Select All
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-label" for="defaultCheck1">
+                  Carlifornia
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-label" for="defaultCheck1">
+                  New Delhi
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-label" for="defaultCheck1">
+                  Indiana
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="search-filter-result">
+            <div class="filter__head">
+              <p>None selected</p>
+              <button type="button">Clear all</button>
+            </div>
+            <div class="filter__body">
+                results go here
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="add-rule pt-4">
+        <div class='add-rule-icon'>
+          <div><img src="../../../assets/icons/add.svg" alt=""></div>
+          <p>Add Rule</p>
+        </div>
+        <div class="add-rule-btns">
+        <button type="button" class="secondary-btn">Cancel</button>
+        <Button type="submit" class=" primary-btn">Save</Button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

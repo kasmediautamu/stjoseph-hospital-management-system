@@ -1,0 +1,9 @@
+<div class="dashboard">
+  <app-navigation (toggleCollapse)="onToggleCollapse($event)"></app-navigation>
+  <main>
+    <app-side-nav [ngClass]="{'collapsed': navCollapsed}" ></app-side-nav>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

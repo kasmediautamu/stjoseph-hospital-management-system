@@ -1,0 +1,8 @@
+<svg id="Icon_Nav_Automated" data-name="Icon/Nav/Automated" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group">
+    <path id="Path" d="M0,0H20V20H0Z" fill="none"/>
+    <rect id="Rectangle" width="11.667" height="11.667" rx="1.667" transform="translate(5.833 2.5)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    <path id="A" d="M4.687,6.4,4.043,4.588H1.456L.813,6.4H0L2.35,0h.8L5.5,6.4Z" transform="translate(9.205 5.182)" fill="#ababab"/>
+    <path id="Path-2" data-name="Path" d="M11.667,8.333V10A1.667,1.667,0,0,1,10,11.667H1.667A1.667,1.667,0,0,1,0,10V1.667A1.667,1.667,0,0,1,1.667,0H3.333" transform="translate(2.5 5.833)" fill="none" stroke="#ababab" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+  </g>
+</svg>

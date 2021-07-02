@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="TopMenu_Icon_New" data-name="TopMenu/Icon/New" opacity="0.4">
+    <g id="Group">
+      <path id="Path" d="M0,0H16V16H0Z" fill="none"/>
+      <path id="Path-2" data-name="Path" d="M1.663,0A6,6,0,0,0,0,1.647" transform="translate(3.029 3)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+      <path id="Path-3" data-name="Path" d="M.391,0a6,6,0,0,0,0,2.339" transform="translate(1.733 6.806)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+      <path id="Path-4" data-name="Path" d="M0,0A6,6,0,0,0,1.647,1.663" transform="translate(3 11.308)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+      <path id="Path-5" data-name="Path" d="M0,.276a6,6,0,0,0,2.333,0" transform="translate(6.806 13.6)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+      <path id="Path-6" data-name="Path" d="M0,1.647A6,6,0,0,0,1.663,0" transform="translate(11.308 11.353)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+      <path id="Path-7" data-name="Path" d="M.276,2.339A6,6,0,0,0,.276,0" transform="translate(13.6 6.855)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+      <path id="Path-8" data-name="Path" d="M1.647,1.663A6,6,0,0,0,0,0" transform="translate(11.353 3.029)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+      <path id="Path-9" data-name="Path" d="M2.339.394A6,6,0,0,0,0,.381" transform="translate(6.855 1.73)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+      <path id="Path-10" data-name="Path" d="M1.333,0,0,2.667H2.667L1.333,5.333" transform="translate(6.667 5.333)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+      <path id="Path-11" data-name="Path" d="M0,12A6,6,0,0,0,6,6,6,6,0,0,0,0,0" transform="translate(8 2)" fill="none" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.833"/>
+    </g>
+  </g>
+</svg>
