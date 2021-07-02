@@ -9,7 +9,7 @@ main {
     background-color: $athens-gray;
     flex-basis: calc((220 / 1440) * 100%);
     padding: 0 10px;
-
+    position: absolute;
     &.collapsed {
       flex-basis: calc((60 / 1440) * 100%);
     }
