@@ -9,30 +9,35 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: calc((230 / 1440) * 100%);
     height: 75%;
     -webkit-box-shadow: 0px 0px 4px 1px rgba(21, 34, 50, 0.08);
     -moz-box-shadow: 0px 0px 4px 1px rgba(21, 34, 50, 0.08);
     box-shadow: 0px 0px 4px 1px rgba(21, 34, 50, 0.08);
 
     h3 {
-
+      font-family: $inter-bold;
+      font-size: 20px;
+      line-height: calc(20/28);
+      color:$heavy-blue;
     }
 
     .description {
-
       width: 28%; // force text-wrap
       text-align: center;
       margin: 12px 0;
+      font-family: $inter-regular;
+      color:$dirty-brown;
+      font-size: 16px;
+      // line-height:calc(16/24);
     }
 
     .add-view {
-
       display: flex;
-      background-color: $chathams-blue;
-      border-radius: 4px;
       padding: 8px 20px;
       border: 0;
       margin: 12px 0;
+      @include btn-primary;
     }
   }
 }
